@@ -1,0 +1,117 @@
+body {
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.topbar {
+    width: 100vw;
+    height: 7vh;
+    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.topbar p {
+    color: #BD1220;
+    font-size: 4vh;
+    font-weight: bolder;
+    position: relative;
+    left: 7vh;
+    top: .5vh;
+}
+
+.topbar span {
+    color: black;
+}
+
+.topbar a {
+    text-decoration: none;
+}
+
+.topbar a:hover {
+    color: #BD1220;
+}
+
+.services {
+    position: relative;
+    top: 100px;
+}
+
+.serviceCard {
+    width: 300px;
+    height: 600px;
+    border: 1px solid #BD1220;
+    border-radius: 25px;
+    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.serviceTitle {
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #BD1220;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: white;
+}
+
+.servicePrice {
+    height: 200px;
+    border-top: 1px solid #BD1220;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.servicePrice p:first-of-type {
+    font-size: 30px;
+}
+
+.servicePrice p:nth-of-type(2) {
+    font-size: 50px;
+    color: #BD1220
+}
+
+.servicePrice span {
+    font-size: 30px;
+    color: black;
+}
+
+.serviceFeature {
+    height: 75px;
+    border-top: 1px solid #BD1220;
+    font-size: 18px;
+}
+
+.orderService {
+    height: 150px;
+    border-top: 1px solid #BD1220;
+}
+
+.serviceTitle,
+.servicePrice,
+.serviceFeature {
+    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.orderService button {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: white;
+    color: #BD1220;
+    font-weight: bolder;
+    font-size: 17px;
+    border: 2px solid #BD1220;
+    margin-top: 40px;
+    transition: .5s linear;
+}
+
+.orderService button:hover {
+    color: white;
+    background-color: #BD1220;
+}
+.secondFeat p{
+    padding-top: 25px;
+}
+.firstFeat p{
+    padding-top: 12px;
+}
