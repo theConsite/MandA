@@ -31,7 +31,27 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.3'
+    });
+  };
 
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="857567574642321" theme_color="#fa3c4c">
+    </div>
     <div class="site-wrap">
 
         <div class="site-mobile-menu site-navbar-target">
@@ -404,7 +424,7 @@
                         </div>
                     </div>
 
-<!--
+                    <!--
                     <div class="col-lg-6 mb-4">
                         <div class="testimonial bg-white h-100">
                             <blockquote class="mb-3">
@@ -492,7 +512,7 @@
                             <div class="col-12">
                                 <h3 class="footer-heading mb-4">O nas</h3>
                                 <p class="text-justify">Jesteśmy grupą dobrych znajomych, pasjonatów technologii, którzy postanowili zacząć tworzyć materiały w internecie.
-                                Obecnie internet jest najważniejszym miejscem promocji. A my pomożemy Ci się w nim odnaleć!</p>
+                                    Obecnie internet jest najważniejszym miejscem promocji. A my pomożemy Ci się w nim odnaleć!</p>
                             </div>
                         </div>
 
